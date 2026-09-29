@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Treeni</title>
+  <meta name="theme-color" content="#0a0c14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Treeni">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <button id="back-btn" class="back hidden" aria-label="Takaisin"></button>
+    <div id="logo" class="logo">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <rect x="1.5" y="9" width="2.2" height="6" rx="1"/>
+        <rect x="4.4" y="6.5" width="3" height="11" rx="1.4"/>
+        <rect x="16.6" y="6.5" width="3" height="11" rx="1.4"/>
+        <rect x="20.3" y="9" width="2.2" height="6" rx="1"/>
+        <rect x="7.4" y="10.9" width="9.2" height="2.2" rx="1.1"/>
+      </svg>
+    </div>
+    <div class="head-text">
+      <h1 id="head-title">Treeni</h1>
+      <div id="head-sub" class="sub"></div>
+    </div>
+  </header>
+
+  <main id="app"><div class="loading">Ladataan…</div></main>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
